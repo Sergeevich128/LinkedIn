@@ -1,0 +1,184 @@
+body {
+    position: relative;
+}
+
+aside {
+    width: 290px;
+    background: #F7F9FB;
+}
+
+aside h3 {
+    font-family: Gotham Pro;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+aside section {
+    padding: 25px 29px 31px 30px;
+}
+
+.your-dashboard {
+    height: 360px;
+    width: 100%;
+    background: #fff;
+}
+
+.dashboard-title,
+.visitors-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-aside,
+.dashboard-link {
+    font-size: 12px;
+    line-height: 11px;
+    text-transform: uppercase;
+}
+
+.dashboard-link {
+    color: #0275B1;
+    margin-left: 15px;
+}
+
+.line-aside {
+    height: 1px;
+    background: #F4F4F4;
+    margin: 22px 0 18px 0;
+}
+
+.dashboard-info {
+    width: 100%;
+    height: 253px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info-block {
+    width: 100%;
+    height: 71px;
+    display: flex;
+    flex-direction: column;
+}
+
+.number-aside {
+    font-size: 52px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #0275B1;
+}
+
+.views-aside {
+    font-family: 'Gotham Pro';
+    font-weight: 400;
+    margin-top: 3px;
+}
+
+.visitors {
+    width: 100%;
+    height: 427px;
+    background: #fff;
+    margin: 18px 0 20px 0;
+}
+
+.visitors-title a {
+    text-decoration: none;
+}
+
+.visitor {
+    display: flex;
+    width: 216px;
+    height: 52px;
+    margin-bottom: 15px;
+}
+
+.info-visitor {
+    margin-left: 15px;
+}
+
+.visitor h3 {
+    font-size: 14px;
+    line-height: 13px;
+    margin-top: 11px;
+}
+
+.visitor span {
+    font-family: 'Gotham Pro';
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 150%;
+}
+
+.recomendations {
+    width: 100%;
+    height: 338px;
+    background: #fff;
+}
+
+.recomendations h4 {
+    text-transform: uppercase;
+}
+
+.info-course {
+	width: 152px;
+}
+
+.info-course h3 {
+	line-height: 135%;
+}
+
+.courses {
+    width: 100%;
+    height: 183px;
+}
+
+.info-course h3, .info-course span {
+	margin-left: 15px;
+}
+
+.course {
+    width: 100%;
+    height: 51px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course span {
+    font-family: 'Gotham Pro';
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 150%;
+}
+
+.course1,
+.course2,
+.course3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 52px;
+    cursor: pointer;
+}
+
+.course1 {
+    background: url("../images.png/course1.png") no-repeat;
+}
+
+.course2 {
+    background: url("../images.png/course2.png") no-repeat;
+}
+
+.course3 {
+    background: url("../images.png/course3.png") no-repeat;
+}
+
+.courses .dashboard-link {
+	display: block;
+	margin: 29px 0 0 0;
+	text-decoration: none;
+}

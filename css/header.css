@@ -1,0 +1,186 @@
+header {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background: #fff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 82px;
+}
+
+.logo img {
+    margin: auto;
+}
+
+.line {
+    width: 1px;
+    background: #F4F4F4;
+}
+
+.navigation {
+    display: flex;
+    width: 450px;
+    height: 100%;
+    margin: 0 20px 0 13px;
+}
+
+.icon {
+    width: 90px;
+    text-align: center;
+    padding-top: 50px;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-position: center 14px;
+    font-size: 12px;
+    line-height: 11px;
+    text-transform: uppercase;
+    color: #181818;
+}
+
+.icon-briefcase {
+    background-image: url(../images.svg/briefcase.svg);
+}
+
+.icon-rss {
+    background-image: url(../images.svg/rss.svg);
+}
+
+.icon-users {
+    background-image: url(../images.svg/users.svg);
+}
+
+.icon-chat {
+    background-image: url(../images.svg/message-square.svg);
+}
+
+.icon-bell {
+    background-image: url(../images.svg/bell.svg);
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    width: 367px;
+}
+
+.icon-search {
+    height: 24px;
+    width: 24px;
+    margin: 0 20px 0 30px;
+    background: url(../images.svg/search.svg) no-repeat;
+}
+
+.search {
+    font-family: 'Gotham Pro';
+    font-weight: 300;
+    height: 15px;
+    width: 54px;
+    font-size: 16px;
+    line-height: 15px;
+    color: #CECECE;
+    border: none;
+}
+
+.search:focus {
+    outline: 0;
+}
+
+.user-data {
+    display: flex;
+    align-items: center;
+    width: 330px;
+}
+
+.user-data img {
+    margin: 0 15px 0 30px;
+}
+
+.user-information {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.info-top {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.info-bottom {
+    display: flex;
+}
+
+.name {
+    font-size: 12px;
+    line-height: 11px;
+    text-transform: uppercase;
+}
+
+.who, .views {
+    font-family: Gotham Pro;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 11px;
+}
+
+.who {
+    text-transform: uppercase;
+    color: rgba(24, 24, 24, 0.2);
+    margin-left: 10px;
+}
+
+.views {
+    color: #747474;
+}
+
+.rating {
+    font-size: 12px;
+    font-weight: 500;
+    color: #02B033;
+    margin: 0 2px 0 4px;
+}
+
+.arrow-up-right {
+    height: 12px;
+    width: 12px;
+    background: url(../images.svg/arrow-up-right.svg) no-repeat;
+}
+
+.other {
+    width: 82px;
+}
+
+.dots {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    margin: 18px 33px 10px;
+    cursor: pointer;
+}
+
+.dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #181818;
+}
+
+.dots div {
+    width: 5px;
+    height: 5px;
+}
+
+.other div, .other div a {
+    font-size: 12px;
+    line-height: 11px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #181818;
+    text-decoration: none;
+
+}

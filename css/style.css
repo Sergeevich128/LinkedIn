@@ -5,10 +5,11 @@
 }
 
 body {
+    width: 1440px;
+    margin: 0 auto;
 	display: flex;
     flex-wrap: wrap;
     background-color: #F6F8FA;
-    margin: 0;
     padding: 0;
 }
 
@@ -29,6 +30,9 @@ section {
 }
 
 .content {
-	margin: 40px auto;
+    width: 1180px;
 	display: flex;
+	margin: 40px auto;
 }
+
+

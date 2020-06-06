@@ -19,8 +19,12 @@ aside h4 {
     line-height: 150%;
 }
 
+.text {
+    font-size: 14px;
+}
+
 .profile {
-    width: 850px;
+    width: 100%;
     height: 360px;
     background-color: #fff;
     background-image: url(../images.png/profile-bg.png);
@@ -140,13 +144,6 @@ aside h4 {
     align-items: center;
 }
 
-.name-logo span {
-    font-family: Gotham Pro;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 17px;
-}
-
 .name-profile img {
     margin-left: 4px;
 }
@@ -173,8 +170,9 @@ aside h4 {
     margin: 14px 0 15px 0;
     width: 583px;
     height: 42px;
-    font-size: 14px;
 }
+
+
 
 .buttons-info {
     margin-bottom: 6px;
@@ -255,9 +253,9 @@ button:focus {
     background: #fff;
 }
 
-.about p {
+.about-text {
+    display: block;
     margin: 15px 0 20px 0;
-    font-size: 14px;
     line-height: 150%;
 }
 
@@ -516,3 +514,21 @@ button:focus {
 .year {
     margin-bottom: 9px;
 }
+
+@media screen and (max-width: 991px) {
+   .content {
+        width: 100%;
+        /*flex-wrap: wrap;*/
+    }
+
+    /*main {
+        width: 925px;
+    }*/
+    
+    .user-info {
+        justify-content: space-around;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {}

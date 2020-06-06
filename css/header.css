@@ -1,13 +1,14 @@
 header {
-    display: flex;
     height: 80px;
+    width: 100%;
+    display: flex;
     background: #fff;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    width: 82px;
+    width: 130px;
 }
 
 .logo img {
@@ -118,7 +119,8 @@ header {
     text-transform: uppercase;
 }
 
-.who, .views {
+.who,
+.views {
     font-family: Gotham Pro;
     font-weight: 400;
     font-size: 12px;
@@ -149,7 +151,7 @@ header {
 }
 
 .other {
-    width: 82px;
+    width: 90px;
 }
 
 .dots {
@@ -174,12 +176,49 @@ header {
     height: 5px;
 }
 
-.other div, .other div a {
+.other div,
+.other div a {
     font-size: 12px;
     line-height: 11px;
     text-align: center;
     text-transform: uppercase;
     color: #181818;
     text-decoration: none;
-
 }
+
+/*@media screen and (max-width: 991px) {
+
+
+    .logo {
+        width: 90px;
+    }
+
+    .navigation {
+        width: 480px;
+        margin-left: 26px;
+    }
+
+    .user-data {
+        width: 360px;
+    }
+
+
+    .content {
+        width: 1260px;
+    }
+
+
+    main {
+        width: 900px;
+    }
+
+    main h3 {
+        font-size: 30px;
+    }
+
+    aside {
+        width: 315px;
+    }
+}
+
+@media screen and (min-width: 1200px) {}*/

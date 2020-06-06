@@ -4,6 +4,7 @@ body {
 
 aside {
     width: 290px;
+    margin-left: 40px;
     background: #F7F9FB;
 }
 
@@ -19,7 +20,7 @@ aside section {
 }
 
 .your-dashboard, .visitors, .recomendations {
-    margin: 0 0 20px 40px;
+    margin: 0 0 20px 0;
 }
 
 .your-dashboard {
@@ -185,3 +186,8 @@ aside section {
 	margin: 29px 0 0 0;
 	text-decoration: none;
 }
+
+@media screen and (max-width: 991px) {
+}
+
+@media screen and (min-width: 1200px) {}

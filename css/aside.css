@@ -1,15 +1,10 @@
-body {
-    position: relative;
-}
-
 aside {
-    width: 290px;
+    width: calc(290 / 1180 * 100%);
     margin-left: 40px;
     background: #F7F9FB;
 }
 
 aside h3 {
-    font-family: Gotham Pro;
     font-weight: 700;
     font-size: 14px;
     line-height: 150%;

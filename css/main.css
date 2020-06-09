@@ -1,11 +1,15 @@
-main {
-    width: 850px;
+/*main {
     display: flex;
     flex-direction: column;
+}*/
+
+main {
+    font-weight: 400;
+    color: #181818;
+    width: calc(850 / 1180 * 100%);
 }
 
 main h3 {
-    font-family: Gotham Pro;
     font-weight: 700;
     font-size: 18px;
     line-height: 17px;
@@ -13,7 +17,6 @@ main h3 {
 
 main h4,
 aside h4 {
-    font-family: Gotham Pro;
     font-weight: 500;
     font-size: 14px;
     line-height: 150%;
@@ -67,7 +70,7 @@ aside h4 {
 }
 
 .edit-profile {
-    margin-left: 563px;
+    display: flex;
 }
 
 .edit {
@@ -83,7 +86,6 @@ aside h4 {
 }
 
 .edit b {
-    font-family: Gotham Pro;
     font-weight: 400;
     font-size: 12px;
     line-height: 11px;
@@ -103,6 +105,7 @@ aside h4 {
     background: rgba(255, 255, 255, 0.9);
     box-shadow: 0px 10px 30px rgba(113, 123, 133, 0.05);
     border-radius: 4px;
+    margin-left: 10px;
 }
 
 .user-info {
@@ -149,7 +152,7 @@ aside h4 {
 }
 
 .name-profile span {
-    font-family: Gotham Pro;
+    
     font-weight: 700;
     font-size: 18px;
     line-height: 17px;
@@ -182,7 +185,6 @@ aside h4 {
     width: 170px;
     height: 32px;
     border-radius: 4px;
-    font-family: Gotham Pro;
     font-weight: 500;
     font-size: 12px;
     line-height: 11px;
@@ -199,7 +201,6 @@ aside h4 {
     width: 170px;
     height: 32px;
     border-radius: 4px;
-    font-family: Gotham Pro;
     font-weight: 500;
     font-size: 12px;
     line-height: 11px;
@@ -229,7 +230,6 @@ button:focus {
     width: 240px;
     height: 40px;
     cursor: pointer;
-    font-family: Gotham Pro;
     font-weight: 500;
     font-size: 12px;
     line-height: 11px;
@@ -242,7 +242,6 @@ button:focus {
     width: 240px;
     background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%);
     border-radius: 4px 4px 0px 0px;
-    font-family: Gotham Pro;
     font-weight: 500;
     color: #FFFFFF;
 }
@@ -260,7 +259,6 @@ button:focus {
 }
 
 .about a {
-    font-family: Gotham Pro;
     font-weight: 500;
     font-size: 12px;
     line-height: 11px;
@@ -271,7 +269,6 @@ button:focus {
 }
 
 .projects {
-    width: 100%;
     height: 355px;
     background: #fff;
     margin: 19px 0 21px 0;
@@ -329,7 +326,6 @@ button:focus {
 }
 
 .project-data {
-    font-family: Gotham Pro;
     font-weight: 300;
     font-size: 10px;
     line-height: 150%;
@@ -338,7 +334,6 @@ button:focus {
 .show-all {
     display: block;
     margin-top: 25px;
-    font-family: Gotham Pro;
     font-weight: 500;
     font-size: 12px;
     line-height: 11px;
@@ -478,7 +473,6 @@ button:focus {
 
 .which-contries,
 .year {
-    font-family: Gotham Pro;
     font-weight: 300;
 }
 
@@ -515,20 +509,6 @@ button:focus {
     margin-bottom: 9px;
 }
 
-@media screen and (max-width: 991px) {
-   .content {
-        width: 100%;
-        /*flex-wrap: wrap;*/
-    }
-
-    /*main {
-        width: 925px;
-    }*/
-    
-    .user-info {
-        justify-content: space-around;
-    }
-
-}
+@media screen and (max-width: 991px) {}
 
 @media screen and (min-width: 1200px) {}

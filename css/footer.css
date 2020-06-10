@@ -1,24 +1,21 @@
 footer {
     height: 215px;
     width: 100%;
+    display: flex;
+    padding: 35px 82px 53px;
     background: #F7F9FB;
     border-top: 1px solid #E7E7E7;
 
 }
 
-.footer-container {
-    display: flex;
-    padding: 35px 82px 53px;
-}
-
-.footer-container .logo-name {
+footer .logo-name {
     display: flex;
     margin-top: 12px;
     font-size: 14px;
     line-height: 150%;
 }
 
-.footer-container .logo-name span:last-child {
+footer .logo-name span:last-child {
     color: #0775B0;
 }
 
@@ -34,6 +31,7 @@ footer {
 .footer-title {
     font-size: 12px;
     line-height: 11px;
+    margin-bottom: 23px;
 }
 
 .nav-container {
@@ -61,11 +59,6 @@ footer {
     text-decoration: none;
 }
 
-.fast-access {
-    width: 170px;
-    height: 108px;
-}
-
 .button-footer {
     display: flex;
     align-items: center;
@@ -80,11 +73,8 @@ footer {
 }
 
 .footer-language {
-    width: 270px;
-    height: 66px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     margin-left: 60px;
 }
 
@@ -96,6 +86,7 @@ footer {
     font-size: 12px;
     line-height: 11px;
     text-transform: uppercase;
+    width: 270px;
 }
 
 .footer-language select:focus {

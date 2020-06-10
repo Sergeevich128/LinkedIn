@@ -7,61 +7,48 @@ aside {
 aside h3 {
     font-weight: 700;
     font-size: 14px;
-    line-height: 150%;
+}
+
+aside h4 {
+    font-size: 12px;
+    line-height: 11px;
+    text-transform: uppercase;
+
 }
 
 aside section {
-    padding: 25px 29px 31px 30px;
+    padding: 25px 30px 31px;
+    margin-bottom: 19px;
 }
 
-.your-dashboard, .visitors, .recomendations {
-    margin: 0 0 20px 0;
-}
-
-.your-dashboard {
-    height: 360px;
-    width: 100%;
-    background: #fff;
-}
-
-.dashboard-title,
-.visitors-title {
+.aside-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #F4F4F4;
 }
 
-.title-aside,
+.title-third-block {
+    margin: 0 auto;
+}
+.dashboard-info,
+.courses,
+.visitors-container {
+    margin-top: 20px;
+}
+
 .dashboard-link {
     font-size: 12px;
     line-height: 11px;
     text-transform: uppercase;
-}
-
-.dashboard-link {
     color: #0275B1;
-    margin-left: 15px;
-}
-
-.line-aside {
-    height: 1px;
-    background: #F4F4F4;
-    margin: 22px 0 18px 0;
-}
-
-.dashboard-info {
-    width: 100%;
-    height: 253px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .info-block {
-    width: 100%;
-    height: 71px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
 }
 
 .number-aside {
@@ -77,20 +64,12 @@ aside section {
     margin-top: 3px;
 }
 
-.visitors {
-    width: 100%;
-    height: 427px;
-    background: #fff;
-}
-
 .visitors-title a {
     text-decoration: none;
 }
 
 .visitor {
     display: flex;
-    width: 216px;
-    height: 52px;
     margin-bottom: 15px;
 }
 
@@ -111,27 +90,12 @@ aside section {
     line-height: 150%;
 }
 
-.recomendations {
-    width: 100%;
-    height: 338px;
-    background: #fff;
-}
-
-.recomendations h4 {
+.course-title {
     text-transform: uppercase;
 }
 
 .info-course {
-	width: 152px;
-}
-
-.info-course h3 {
-	line-height: 135%;
-}
-
-.courses {
-    width: 100%;
-    height: 183px;
+	width: 65%;
 }
 
 .info-course h3, .info-course span {
@@ -139,11 +103,8 @@ aside section {
 }
 
 .course {
-    width: 100%;
-    height: 51px;
     margin-bottom: 15px;
     display: flex;
-    justify-content: space-between;
 }
 
 .course span {
@@ -165,15 +126,15 @@ aside section {
 }
 
 .course1 {
-    background: url("../images.png/course1.png") no-repeat;
+    background: url("../images/images.png/course1.png") no-repeat;
 }
 
 .course2 {
-    background: url("../images.png/course2.png") no-repeat;
+    background: url("../images/images.png/course2.png") no-repeat;
 }
 
 .course3 {
-    background: url("../images.png/course3.png") no-repeat;
+    background: url("../images/images.png/course3.png") no-repeat;
 }
 
 .courses .dashboard-link {
@@ -182,7 +143,6 @@ aside section {
 	text-decoration: none;
 }
 
-@media screen and (max-width: 991px) {
-}
+@media screen and (max-width: 991px) {}
 
 @media screen and (min-width: 1200px) {}

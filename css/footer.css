@@ -2,7 +2,7 @@ footer {
     height: 215px;
     width: 100%;
     display: flex;
-    padding: 35px 82px 53px;
+    padding: 35px 130px 53px;
     background: #F7F9FB;
     border-top: 1px solid #E7E7E7;
 
@@ -20,12 +20,10 @@ footer .logo-name span:last-child {
 }
 
 .footer-nav {
-    width: 485px;
-    height: 127px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0 65px 0 69px;
+    margin-left: 69px;
 }
 
 .footer-title {
@@ -35,18 +33,14 @@ footer .logo-name span:last-child {
 }
 
 .nav-container {
-    width: 100%;
-    height: 86px;
     display: flex;
     justify-content: space-between;
 }
 
 .nav {
-    width: 135px;
-    height: 100%;
     display: flex;
     flex-direction: column;
-
+    margin-right: 85px;
 }
 
 .nav a {

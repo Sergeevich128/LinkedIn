@@ -16,10 +16,11 @@ header, aside, footer {
 
 section {
     padding: 30px;
+    background: #fff;
 }
 
 .content {
-    width: 1180px;
+    max-width: 1180px;
 	display: flex;
 	margin: 40px auto;
 }

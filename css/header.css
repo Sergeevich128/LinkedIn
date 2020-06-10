@@ -37,23 +37,23 @@ header>div {
 }
 
 .icon-briefcase {
-    background-image: url(../images.svg/briefcase.svg);
+    background-image: url(../images/images.svg/briefcase.svg);
 }
 
 .icon-rss {
-    background-image: url(../images.svg/rss.svg);
+    background-image: url(../images/images.svg/rss.svg);
 }
 
 .icon-users {
-    background-image: url(../images.svg/users.svg);
+    background-image: url(../images/images.svg/users.svg);
 }
 
 .icon-chat {
-    background-image: url(../images.svg/message-square.svg);
+    background-image: url(../images/images.svg/message-square.svg);
 }
 
 .icon-bell {
-    background-image: url(../images.svg/bell.svg);
+    background-image: url(../images/images.svg/bell.svg);
 }
 
 .search-container {
@@ -65,7 +65,7 @@ header>div {
     height: 24px;
     width: 24px;
     margin: 0 20px 0 30px;
-    background: url(../images.svg/search.svg) no-repeat;
+    background: url(../images/images.svg/search.svg) no-repeat;
 }
 
 .search {
@@ -139,7 +139,7 @@ header>div {
 .arrow-up-right {
     height: 12px;
     width: 12px;
-    background: url(../images.svg/arrow-up-right.svg) no-repeat;
+    background: url(../images/images.svg/arrow-up-right.svg) no-repeat;
 }
 
 .other {
@@ -536,7 +536,6 @@ header>div {
     }
 
     .navigation {
-        margin: 0 15px 0 10px;
         flex-grow: 0.2;
     }
 
@@ -570,7 +569,7 @@ header>div {
     }
 }
 
-@media screen and (min-width: 1441px) {
+@media screen and (min-width: 1450px) {
     header {
         justify-content: center;
     }

@@ -1,11 +1,9 @@
 footer {
-    height: 215px;
-    width: 100%;
     display: flex;
-    padding: 35px 130px 53px;
+    justify-content: center;
+    padding: 35px 0 53px;
     background: #F7F9FB;
     border-top: 1px solid #E7E7E7;
-
 }
 
 footer .logo-name {

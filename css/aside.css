@@ -29,6 +29,10 @@ aside section {
     border-bottom: 1px solid #F4F4F4;
 }
 
+.your-dashboard {
+    padding: 25px 30px 11px;
+}
+
 .title-third-block {
     margin: 0 auto;
 }

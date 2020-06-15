@@ -130,15 +130,15 @@ aside section {
 }
 
 .course1 {
-    background: url("../images/images.png/course1.png") no-repeat;
+    background: url("../images/png/course1.png") no-repeat;
 }
 
 .course2 {
-    background: url("../images/images.png/course2.png") no-repeat;
+    background: url("../images/png/course2.png") no-repeat;
 }
 
 .course3 {
-    background: url("../images/images.png/course3.png") no-repeat;
+    background: url("../images/png/course3.png") no-repeat;
 }
 
 .courses .dashboard-link {

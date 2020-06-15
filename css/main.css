@@ -30,7 +30,7 @@ aside h4 {
     width: 100%;
     height: 360px;
     padding: 20px 30px 35px;
-    background-image: url(../images/images.png/profile-bg.png);
+    background-image: url(../images/png/profile-bg.png);
     background-repeat: no-repeat;
 }
 
@@ -61,7 +61,7 @@ aside h4 {
 .icon-upload {
     height: 16px;
     width: 16px;
-    background: url(../images/images.svg/upload.svg) no-repeat;
+    background: url(../images/svg/upload.svg) no-repeat;
     margin: auto;
 }
 
@@ -91,7 +91,7 @@ aside h4 {
 .icon-edit {
     height: 16px;
     width: 16px;
-    background: url(../images/images.svg/edit.svg) no-repeat;
+    background: url(../images/svg/edit.svg) no-repeat;
 }
 
 .more {
@@ -287,15 +287,15 @@ button:focus {
 }
 
 .project1 {
-    background: url(../images/images.svg/project1.svg) no-repeat;
+    background: url(../images/svg/project1.svg) no-repeat;
 }
 
 .project2 {
-    background: url(../images/images.svg/project2.svg) no-repeat;
+    background: url(../images/svg/project2.svg) no-repeat;
 }
 
 .project3 {
-    background: url(../images/images.svg/project3.svg) no-repeat;
+    background: url(../images/svg/project3.svg) no-repeat;
 }
 
 .project h4 {

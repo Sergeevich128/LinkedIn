@@ -6,7 +6,7 @@ const iconSearch = document.getElementsByClassName('icon-search')[0];
 const input = document.getElementsByClassName('search')[0];
 
 const menuBtn = document.getElementsByClassName('menu-btn')[0];
-const menuLinks = document.getElementsByClassName('menu-links')[0];
+const navigation = document.getElementsByClassName('navigation')[0];
 
 
 searchContainer.addEventListener('click', function(event) {
@@ -31,9 +31,9 @@ userData.addEventListener('click', function(event) {
 menuBtn.addEventListener('click', function(event) {
     if (menuBtn.classList.contains('menu-btn-active')) {
         menuBtn.classList.remove('menu-btn-active');
-        menuLinks.classList.add('menu-none');
+        navigation.classList.add('menu-none');
     } else {
         menuBtn.classList.add('menu-btn-active');
-        menuLinks.classList.remove('menu-none');
+        navigation.classList.remove('menu-none');
     }
 })

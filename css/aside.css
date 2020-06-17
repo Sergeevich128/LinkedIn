@@ -1,6 +1,5 @@
 aside {
     width: calc(290 / 1180 * 100%);
-    margin-left: 40px;
     background: #F7F9FB;
 }
 
@@ -36,6 +35,7 @@ aside section {
 .title-third-block {
     margin: 0 auto;
 }
+
 .dashboard-info,
 .courses,
 .visitors-container {
@@ -94,16 +94,21 @@ aside section {
     line-height: 150%;
 }
 
+.visitor img {
+    height: 52px;
+}
+
 .course-title {
     text-transform: uppercase;
 }
 
 .info-course {
-	width: 65%;
+    width: 65%;
 }
 
-.info-course h3, .info-course span {
-	margin-left: 15px;
+.info-course h3,
+.info-course span {
+    margin-left: 15px;
 }
 
 .course {
@@ -142,11 +147,69 @@ aside section {
 }
 
 .courses .dashboard-link {
-	display: block;
-	margin: 29px 0 0 0;
-	text-decoration: none;
+    display: block;
+    margin: 29px 0 0 0;
+    text-decoration: none;
 }
 
-@media screen and (max-width: 991px) {}
+@media screen and (max-width: 991px) {
+    aside {
+        display: none;
+    }
+}
 
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    aside section {
+        padding: 18px 15px 20px;
+    }
+
+    aside h4,
+    .dashboard-link {
+        font-size: 12px;
+        line-height: 14px;
+        margin-right: 10px;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .visitor h3 {
+        font-size: 12px;
+        margin-top: 9px;
+    }
+
+    .info-course h3 {
+        font-size: 10px;
+    }
+
+    .your-dashboard {
+        padding: 16px 16px 11px;
+    }
+
+    .aside-title {
+        padding-bottom: 16px;
+    }
+
+    .dashboard-info {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1439px) {
+
+    aside h4,
+    .dashboard-link {
+        font-size: 11px;
+    }
+
+    aside h3 {
+        font-size: 11px;
+    }
+
+    .your-dashboard {
+        padding: 25px 18px 11px;
+    }
+
+    aside section {
+        padding: 25px 18px 31px;
+    }
+}

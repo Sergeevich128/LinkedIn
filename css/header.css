@@ -205,6 +205,11 @@ header {
     transform: rotate(-45deg);
 }
 
+.menu-btn-active span::after {
+    transform: rotate(-45deg);
+}
+
+
 .search-menu {
     display: none;
     align-items: center;
@@ -213,16 +218,15 @@ header {
     border-bottom: 1px solid #F4F4F4;
 }
 
+.profile-more,
+.profile-more-link {
+    display: none;
+}
+
 @media screen and (max-width: 575px) {
     header {
         height: 60px;
         justify-content: space-between;
-    }
-
-    .who,
-    .views,
-    .user-data {
-        display: none;
     }
 
     .navigation {
@@ -231,14 +235,29 @@ header {
 
     .logo {
         min-width: 80px;
+        border-right: 1px solid #F4F4F4;
     }
 
     .logo img {
         height: 42px;
     }
 
+    .user-data {
+        position: relative;
+        min-width: 157px;
+    }
+
+    .user-information {
+        position: absolute;
+        top: 100%;
+        padding: 11px 10px 18px 10px;
+        background: #fff;
+        border-top: 1px solid #F4F4F4;
+    }
+
     .menu-burger {
         min-width: 80px;
+        border-left: 1px solid #F4F4F4;
     }
 
     .menu-btn {
@@ -251,6 +270,56 @@ header {
     .menu-btn span::after {
         width: 26px;
         margin-left: -13px;
+    }
+
+    .user-avatar {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .profile-more {
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+
+    .profile-more svg {
+        margin-left: 4px;
+        transition: .3s;
+    }
+
+    .profile-more-link {
+        display: block;
+        height: 30px;
+        color: #0275B1;
+        padding: 5px;
+        line-height: 14px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .info-top {
+        margin: 2px 0 9px 0;
+    }
+
+    .info-bottom {
+        margin-bottom: 10px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #F4F4F4;
+    }
+
+    .info-none {
+        display: none;
+    }
+
+    .profile-active {
+        color: #0275B1;
+        fill: #0275B1;
+    }
+
+    .svg-rotate {
+        transform: rotate(180deg);
     }
 }
 
@@ -273,6 +342,8 @@ header {
         flex-basis: 80px;
         min-width: 80px;
     }
+
+
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
@@ -282,6 +353,10 @@ header {
 
     .user-avatar {
         margin: 0 15px 0 30px;
+    }
+
+    .user-data {
+        flex-grow: 1;
     }
 }
 
@@ -293,10 +368,6 @@ header {
     .other,
     .menu-none {
         display: none;
-    }
-
-    .user-data {
-        flex-grow: 1;
     }
 
     .search-container {

@@ -16,7 +16,7 @@ aside h4 {
 }
 
 aside section {
-    padding: 25px 30px 31px;
+    padding: 9% 10% 8%;
     margin-bottom: 19px;
 }
 
@@ -24,12 +24,8 @@ aside section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 20px;
+    padding-bottom: 19px;
     border-bottom: 1px solid #F4F4F4;
-}
-
-.your-dashboard {
-    padding: 25px 30px 11px;
 }
 
 .title-third-block {
@@ -39,7 +35,7 @@ aside section {
 .dashboard-info,
 .courses,
 .visitors-container {
-    margin-top: 20px;
+    margin-top: 19px;
 }
 
 .dashboard-link {
@@ -52,7 +48,7 @@ aside section {
 .info-block {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
 
 .number-aside {
@@ -63,7 +59,6 @@ aside section {
 }
 
 .views-aside {
-    font-family: 'Gotham Pro';
     font-weight: 400;
     margin-top: 3px;
 }
@@ -88,7 +83,6 @@ aside section {
 }
 
 .visitor span {
-    font-family: 'Gotham Pro';
     font-weight: 400;
     font-size: 10px;
     line-height: 150%;
@@ -117,7 +111,6 @@ aside section {
 }
 
 .course span {
-    font-family: 'Gotham Pro';
     font-weight: 400;
     font-size: 10px;
     line-height: 150%;
@@ -159,9 +152,6 @@ aside section {
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-    aside section {
-        padding: 18px 15px 20px;
-    }
 
     aside h4,
     .dashboard-link {
@@ -181,10 +171,6 @@ aside section {
         font-size: 10px;
     }
 
-    .your-dashboard {
-        padding: 16px 16px 11px;
-    }
-
     .aside-title {
         padding-bottom: 16px;
     }
@@ -192,24 +178,32 @@ aside section {
     .dashboard-info {
         margin-top: 15px;
     }
+
+    .your-dashboard {
+        padding: 24px 10% 29px;
+    }
+
+    .your-dashboard a {
+        display: none;
+    }
+
+    .your-dashboard .aside-title {
+        justify-content: center;
+    }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1439px) {
-
-    aside h4,
-    .dashboard-link {
-        font-size: 11px;
-    }
-
     aside h3 {
-        font-size: 11px;
+        font-size: 12px;
     }
+}
 
-    .your-dashboard {
-        padding: 25px 18px 11px;
-    }
 
-    aside section {
-        padding: 25px 18px 31px;
+@media screen and (max-width: 992px) {
+    aside {
+        position: absolute;
+        right: 40px;
+        transform: translateX(calc(100% + 40px));
+        transition: 1s linear;
     }
 }

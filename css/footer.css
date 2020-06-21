@@ -32,7 +32,6 @@ footer .logo-name span:last-child {
 
 .nav-container {
     display: flex;
-    justify-content: space-between;
 }
 
 .nav {

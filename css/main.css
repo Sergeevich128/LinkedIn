@@ -1,8 +1,3 @@
-/*main {
-    display: flex;
-    flex-direction: column;
-}*/
-
 main {
     font-weight: 400;
     color: #181818;
@@ -28,6 +23,9 @@ aside h4 {
 
 .profile {
     height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 20px 30px 35px;
     background-image: url(../images/png/profile-bg.png);
     background-repeat: no-repeat;
@@ -52,7 +50,7 @@ aside h4 {
     height: 36px;
     width: 36px;
     background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0px 10px 30px rgba(113, 123, 133, 0.05);
+    box-shadow: 0 10px 30px rgba(113, 123, 133, 0.05);
     border-radius: 4px;
     cursor: pointer;
 }
@@ -75,7 +73,7 @@ aside h4 {
     height: 36px;
     width: 132px;
     background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0px 10px 30px rgba(113, 123, 133, 0.05);
+    box-shadow: 0 10px 30px rgba(113, 123, 133, 0.05);
     border-radius: 4px;
     cursor: pointer;
 }
@@ -98,7 +96,7 @@ aside h4 {
     height: 36px;
     width: 36px;
     background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0px 10px 30px rgba(113, 123, 133, 0.05);
+    box-shadow: 0 10px 30px rgba(113, 123, 133, 0.05);
     border-radius: 4px;
     margin-left: 10px;
 }
@@ -106,7 +104,6 @@ aside h4 {
 .user-info {
     display: flex;
     justify-content: space-between;
-    margin-top: 90px;
 }
 
 .icon-more {
@@ -133,7 +130,7 @@ aside h4 {
     flex-wrap: wrap;
 }
 
-.avatar-big {
+.avatar {
     margin-right: 25px;
 }
 
@@ -232,7 +229,7 @@ button:focus {
     height: 50px;
     width: 240px;
     background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%);
-    border-radius: 4px 4px 0px 0px;
+    border-radius: 4px 4px 0 0;
     font-weight: 500;
     color: #FFFFFF;
 }
@@ -243,14 +240,13 @@ button:focus {
     line-height: 150%;
 }
 
-.about a {
+.link {
     font-weight: 500;
     font-size: 12px;
     line-height: 11px;
     text-transform: uppercase;
     text-decoration: none;
     color: #0275B1;
-
 }
 
 .projects {
@@ -270,7 +266,7 @@ button:focus {
     margin-left: 10px;
 }
 
-.about-projects {
+.projects-slider {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -291,20 +287,15 @@ button:focus {
     margin-bottom: 15px;
 }
 
+.project-about {
+    font-weight: 300;
+    font-size: 10px;
+}
+
 .project-data {
     font-weight: 300;
     font-size: 10px;
     line-height: 150%;
-}
-
-.show-all {
-    display: block;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 11px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #0275B1;
 }
 
 .skills {
@@ -451,30 +442,45 @@ button:focus {
     margin-bottom: 9px;
 }
 
-.number2 {
-    display: none;
+@media screen and (max-width: 767px) {
+    .profile {
+        height: 300px;
+        background-size: 100% 150px;
+        padding: 15px 20px 20px;
+    }
+
+    main .button-info,
+    main .buttons-info .active {
+        width: 150px;
+        height: 26px;
+    }
+
+    .text {
+        font-size: 11px;
+    }
+
+    .avatar-big {
+        height: 145px;
+    }
+
+    .practice {
+        margin: 10px 0 14px 0;
+    }
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (max-width: 991px) {
     .content {
-        max-width: 830px;
-        margin: 40px 80px 0 80px;
+        justify-content: center;
+        margin: 40px 10px;
     }
 
     main {
         width: 100%;
+        max-width: 830px;
     }
 
     main h3 {
         font-size: 17px;
-    }
-
-    .profile {
-        padding: 20px 20px 30px;
-    }
-
-    .user-info {
-        margin-top: 97px;
     }
 
     .show-all {
@@ -484,20 +490,20 @@ button:focus {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .content {
-        margin: 35px 80px 0 80px;
+        margin: 40px 25px;
     }
 
-    .project-last {
-        display: none;
+    .text {
+        font-size: 13px;
     }
 
-    .number2 {
-        display: block;
+    main .button-info,
+    main .buttons-info .active {
+        height: 28px;
     }
+}
 
-    .number3 {
-        display: none;
-    }
+@media screen and (max-width: 1199px) {
 
     .project {
         margin: 0 10px 25px 0;
@@ -516,62 +522,14 @@ button:focus {
         margin-left: 8px;
     }
 
-    .text {
-        font-size: 12px;
-    }
-
     .skills h4 {
         font-size: 10px;
     }
 }
 
-@media screen and (min-width: 991px) and (max-width: 1199px) {
-    .content {
-        margin: 40px 80px 0 90px;
-    }
-
-    main h3 {
-        font-size: 16px;
-    }
-
-    main section {
-        padding: 25px;
-    }
-
-    .profile {
-        padding: 25px 20px 30px;
-    }
-
-    .user-info {
-        margin-top: 105px;
-    }
-
-    .text {
-        font-size: 11px;
-    }
-
-    .button-info,
-    .buttons-info .active {
-        width: 160px;
-        height: 30px;
-    }
-
-    .avatar-big {
-        height: 160px;
-    }
-}
-
 @media screen and (min-width: 1200px) and (max-width: 1439px) {
-    .content {
-        margin: 40px 90px 0 130px;
-    }
-
     main section {
         padding: 22px;
-    }
-
-    main h3 {
-        font-size: 17px;
     }
 
     .project {

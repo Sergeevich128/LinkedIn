@@ -63,3 +63,4 @@ profileMore.addEventListener('click', function(event) {
         profileMore.classList.remove('profile-active');
     }
 });
+

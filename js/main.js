@@ -10,10 +10,9 @@
 //     }
 // });
 //
-//
 // buttonsInfo.addEventListener('click', function(event) {
 //     const link = event.target.closest('button.button-info');
-//     if (link) {
+//     if (link) {zzz
 //         buttonsInfo.getElementsByClassName('active')[0].classList.remove('active');
 //         link.classList.add('active');
 //     }

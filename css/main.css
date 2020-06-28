@@ -241,6 +241,8 @@ button:focus {
 }
 
 .link {
+    display: block;
+    margin-top: 25px;
     font-weight: 500;
     font-size: 12px;
     line-height: 11px;
@@ -268,14 +270,15 @@ button:focus {
 
 .projects-slider {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 .project {
     display: flex;
     flex-direction: column;
-    width: 250px;
+    margin: 0 10px;
+    pointer-events: none;
     cursor: pointer;
 }
 
@@ -442,6 +445,10 @@ button:focus {
     margin-bottom: 9px;
 }
 
+.grabbing {
+    cursor: grabbing;
+}
+
 @media screen and (max-width: 767px) {
     .profile {
         height: 300px;
@@ -504,11 +511,6 @@ button:focus {
 }
 
 @media screen and (max-width: 1199px) {
-
-    .project {
-        margin: 0 10px 25px 0;
-    }
-
     .name-profile {
         margin-right: 10px;
     }
@@ -530,10 +532,6 @@ button:focus {
 @media screen and (min-width: 1200px) and (max-width: 1439px) {
     main section {
         padding: 22px;
-    }
-
-    .project {
-        margin: 0 10px 25px 0;
     }
 
     .show-all {

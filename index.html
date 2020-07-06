@@ -19,17 +19,33 @@
         <img src="images/png/logo.png"/>
     </div>
     <div class="navigation">
-        <a href="#" class="icon icon-rss">Feed</a>
-        <a href="#" class="icon icon-users">Network</a>
-        <a href="#" class="icon icon-briefcase">Jobs</a>
-        <a href="#" class="icon icon-chat">Chat</a>
-        <a href="#" class="icon icon-bell">Notices</a>
+        <a href="#" class="icon icon-rss icon-menu">Menu
+            <svg class="svg1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16"
+                 fill="currentColor" width="16" height="16" focusable="false">
+                <path d="M8.8 10.66L14 5.12a.07.07 0 00-.07-.12H2.07a.07.07 0 00-.07.12l5.2 5.54a1.1 1.1 0 001.6 0z"/>
+            </svg>
+        </a>
+        <a href="#" class="icon icon-rss sub-icon">Feed</a>
+        <a href="#" class="icon icon-users sub-icon">Network</a>
+        <a href="#" class="icon icon-briefcase sub-icon">Jobs</a>
+        <a href="#" class="icon icon-chat sub-icon">Chat</a>
+        <a href="#" class="icon icon-bell sub-icon">Notices</a>
+        <a href="#" class="icon-other">Other
+            <svg class="svg2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16"
+                 fill="currentColor" width="16" height="16" focusable="false">
+                <path d="M8.8 10.66L14 5.12a.07.07 0 00-.07-.12H2.07a.07.07 0 00-.07.12l5.2 5.54a1.1 1.1 0 001.6 0z"/>
+            </svg>
+        </a>
+        <a href="#" class="other-icon">Settings</a>
+        <a href="#" class="other-icon">Help</a>
+        <a href="#" class="other-icon">Posts & Activity</a>
+        <a href="#" class="other-icon">Sing out</a>
         <div class="search-container">
             <div class="icon-search"></div>
             <input class="search" placeholder="Search"/>
         </div>
     </div>
-    <div class="user-data active">
+    <div class="user-data">
         <div class="user-avatar">
             <img src="images/png/avatar-small.png"/>
             <div class="profile-more">
@@ -56,15 +72,16 @@
         </div>
     </div>
     <div class="other">
-        <div class="dots">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-        </div>
-        <div>
-            <a href="#">Other</a>
+        <span class="dot"></span>
+        <a href="#" class="other-title">Other</a>
+        <div class="other-links">
+            <a href="#" class="other-link">Settings</a>
+            <a href="#" class="other-link">Help</a>
+            <a href="#" class="other-link">Posts & Activity</a>
+            <a href="#" class="other-link">Sing out</a>
         </div>
     </div>
+
     <div class="menu-burger">
         <a href="#" class="menu-btn">
             <span></span>
@@ -392,9 +409,9 @@
 <!--</footer>-->
 
 
-<script src="js/main.js"></script>
+<!--<script src="js/main.js"></script>-->
 <script src="js/header.js"></script>
-<script src="js/constants.js"></script>
+<!--<script src="js/constants.js"></script>-->
 </body>
 
 </html>

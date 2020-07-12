@@ -24,7 +24,6 @@ header {
     display: flex;
 }
 
-
 .search-container {
     display: flex;
     align-items: center;
@@ -257,10 +256,8 @@ header {
         border-bottom: 1px solid #F4F4F4;
     }
 
-    .active-menu .sub-icon,
-    .active-other .other-icon,
     .icon-other,
-    .icon-menu {
+    .icon {
         height: 50px;
     }
 }
@@ -299,10 +296,8 @@ header {
         flex-grow: 1;
     }
 
-    .active-menu .sub-icon,
-    .active-other .other-icon,
     .icon-other,
-    .icon-menu {
+    .icon {
         height: 55px;
     }
 }
@@ -319,6 +314,7 @@ header {
 
     .search-container {
         height: 55px;
+        order: -1;
         border-bottom: 1px solid #F4F4F4;
         justify-content: center;
     }
@@ -345,10 +341,8 @@ header {
         top: 100%;
     }
 
-    .sub-icon,
-    .other-icon,
-    .icon-menu,
-    .icon-other {
+    .icon-other,
+    .icon {
         display: flex;
         align-items: center;
         width: 100%;
@@ -358,12 +352,8 @@ header {
         color: #181818;
     }
 
-    .sub-icon,
-    .other-icon {
-        height: 0;
-        opacity: 0;
-        visibility: hidden;
-        transition: .3s;
+    .icon {
+        border-bottom: 1px solid #F4F4F4;
     }
 
     .active-profile .profile-more svg,
@@ -382,15 +372,6 @@ header {
     .navigation svg {
         margin-left: 4px;
         transition: .3s;
-    }
-
-    .active-menu .sub-icon,
-    .active-other .other-icon,
-    .icon-other,
-    .icon-menu {
-        opacity: 1;
-        visibility: visible;
-        border-bottom: 1px solid #F4F4F4;
     }
 }
 
@@ -510,7 +491,7 @@ header {
         height: 4px;
         border-radius: 50%;
         background: #181818;
-        transition: .4s ease-in;
+        transition: .4s;
     }
 
     .dot::before {
@@ -532,7 +513,6 @@ header {
         transition: .4s;
     }
 
-    .icon-other,
     .icon-menu,
     .other-icon {
         display: none;

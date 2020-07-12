@@ -2,16 +2,14 @@ const header = document.getElementsByTagName('header')[0];
 
 document.addEventListener('click', (event) => {
     const elem = event.target;
+    header.classList.remove('active-btn', 'active-profile', 'active-other');
     if (elem.closest('.menu-btn')) {
         header.classList.toggle('active-btn');
+        console.log('click')
     } else if (elem.closest('.profile-more')) {
         header.classList.toggle('active-profile');
         return;
     } else if (elem.closest('.other')) {
-        header.classList.toggle('active-other');
-    } else if (elem.closest('.icon-menu')) {
-        header.classList.toggle('active-menu');
-    } else if (elem.closest('.icon-other')) {
         header.classList.toggle('active-other');
     }
 
@@ -21,6 +19,3 @@ document.addEventListener('click', (event) => {
         header.className = '';
     }
 });
-
-
-

@@ -24,6 +24,11 @@ header {
     display: flex;
 }
 
+.items-menu {
+    display: flex;
+    flex-grow: 1;
+}
+
 .search-container {
     display: flex;
     align-items: center;
@@ -132,19 +137,19 @@ header {
     transform: translateY(10px);
 }
 
-.active-btn .menu-btn span {
+body[data-menu="btn"] .menu-btn span {
     height: 0;
 }
 
-.active-btn .menu-btn span::before {
+body[data-menu="btn"] .menu-btn span::before {
     transform: rotate(45deg);
 }
 
-.active-btn .menu-btn span::after {
+body[data-menu="btn"] .menu-btn span::after {
     transform: rotate(-45deg);
 }
 
-.active-btn .menu-btn span::after {
+body[data-menu="btn"] .menu-btn span::after {
     transform: rotate(-45deg);
 }
 
@@ -197,7 +202,7 @@ header {
         border-top: 1px solid #F4F4F4;
     }
 
-    .active-profile .user-information {
+    body[data-menu="profile"] .user-information {
         opacity: 1;
         visibility: visible;
         top: 100%;
@@ -232,7 +237,7 @@ header {
         cursor: pointer;
     }
 
-    .active-profile .profile-more {
+    body[data-menu="profile"] .profile-more {
         color: #0275B1;
     }
 
@@ -263,7 +268,7 @@ header {
 }
 
 @media screen and (min-width: 576px) {
-    header > div {
+    header>div {
         border-right: 1px solid #F4F4F4;
     }
 
@@ -312,6 +317,10 @@ header {
         display: none;
     }
 
+    .items-menu {
+        flex-direction: column;
+    }
+
     .search-container {
         height: 55px;
         order: -1;
@@ -335,7 +344,7 @@ header {
         border: 1px solid #F4F4F4;
     }
 
-    .active-btn .navigation {
+    body[data-menu="btn"] .navigation {
         opacity: 1;
         visibility: visible;
         top: 100%;
@@ -356,20 +365,12 @@ header {
         border-bottom: 1px solid #F4F4F4;
     }
 
-    .active-profile .profile-more svg,
-    .active-menu .svg1,
-    .active-other .svg2 {
+    body[data-menu="profile"] .profile-more svg {
         transform: rotate(180deg);
         fill: #0275B1;
     }
 
-    .active-menu .icon-menu,
-    .active-other .icon-other {
-        color: #0275B1;
-    }
-
-    .profile-more svg,
-    .navigation svg {
+    .profile-more svg {
         margin-left: 4px;
         transition: .3s;
     }
@@ -444,7 +445,7 @@ header {
         transition: .5s;
     }
 
-    .active-other .other-links {
+    body[data-menu="other"] .other .other-links {
         opacity: 1;
         visibility: visible;
         top: 100%;
@@ -458,24 +459,24 @@ header {
         color: #181818;
     }
 
-    .active-other .dot {
+    body[data-menu="other"] .other .dot {
         background: #0275B1;
     }
 
-    .active-other .dot::before,
-    .active-other .dot::after {
+    body[data-menu="other"] .other .dot::before,
+    body[data-menu="other"] .other .dot::after {
         background: #0275B1;
     }
 
-    .active-other .dot::before {
+    body[data-menu="other"] .other .dot::before {
         transform: translateX(10px);
     }
 
-    .active-other .dot::after {
+    body[data-menu="other"] .other .dot::after {
         transform: translateX(-10px);
     }
 
-    .active-other .other-title {
+    body[data-menu="other"] .other .other-title {
         color: #0275B1;
     }
 
@@ -525,28 +526,37 @@ header {
     }
 
     .search {
-        display: none;
-        width: 167px;
+        width: 0px;
+        transition: .4s;
     }
 
     .user-avatar {
         margin: 0 15px 0 20px;
     }
 
-    .active-search .search-container .icon-search {
+    header[data-menu="search-container"] .search-container .icon-search {
         margin: 0 10px 0 15px;
     }
 
-    .active-search .search-container .search {
-        display: flex;
+    header[data-menu="search-container"] .search-container .search {
+        width: 167px;
     }
 
-    .active-search .user-data .user-information {
-        display: none;
+    header[data-menu="search-container"] .user-data .user-information {
+        width: 0;
+        font-size: 0;
+        opacity: 0;
+        visibility: hidden;
     }
 
-    .active-search .user-data .user-avatar {
+    header[data-menu="search-container"] .user-data .user-avatar {
         margin: 0 auto;
+    }
+
+    .items-menu {
+        min-width: 330px;
+        display: flex;
+        flex-grow: 1;
     }
 
     .user-data {
@@ -560,8 +570,12 @@ header {
     }
 
     .search-container {
-        min-width: 45px;
-        flex-grow: 2;
+        flex-grow: 1;
+    }
+
+    .user-information {
+        width: 137px;
+        transition: .4s;
     }
 
     .icon-search,

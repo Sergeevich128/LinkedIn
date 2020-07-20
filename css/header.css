@@ -531,15 +531,15 @@ body[data-menu="btn"] .menu-btn span::after {
     }
 
     .user-avatar {
-        margin: 0 15px 0 20px;
+        margin: 0 10px 0 17px;
     }
 
     header[data-menu="search-container"] .search-container .icon-search {
-        margin: 0 10px 0 15px;
+        margin: 0 10px 0 17px;
     }
 
     header[data-menu="search-container"] .search-container .search {
-        width: 167px;
+        width: 140px;
     }
 
     header[data-menu="search-container"] .user-data .user-information {
@@ -554,9 +554,8 @@ body[data-menu="btn"] .menu-btn span::after {
     }
 
     .items-menu {
-        min-width: 330px;
-        display: flex;
-        flex-grow: 1;
+        min-width: 290px;
+        flex-grow: 2;
     }
 
     .user-data {
@@ -574,7 +573,7 @@ body[data-menu="btn"] .menu-btn span::after {
     }
 
     .user-information {
-        width: 137px;
+        width: 140px;
         transition: .4s;
     }
 
@@ -660,7 +659,7 @@ body[data-menu="btn"] .menu-btn span::after {
 
 @media screen and (min-width: 768px) and (max-width: 1440px) {
     .navigation {
-        flex-grow: 3;
+        flex-grow: 4;
     }
 }
 
@@ -669,7 +668,7 @@ body[data-menu="btn"] .menu-btn span::after {
         justify-content: center;
     }
 
-    .icon {
+    .icon {c
         min-width: 90px;
     }
 

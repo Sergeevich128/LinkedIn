@@ -153,7 +153,6 @@ body[data-menu="btn"] .menu-btn span::after {
     transform: rotate(-45deg);
 }
 
-
 .search-menu {
     display: none;
     align-items: center;
@@ -534,22 +533,22 @@ body[data-menu="btn"] .menu-btn span::after {
         margin: 0 10px 0 17px;
     }
 
-    header[data-menu="search-container"] .search-container .icon-search {
+    .active-search .search-container .icon-search {
         margin: 0 10px 0 17px;
     }
 
-    header[data-menu="search-container"] .search-container .search {
+    .active-search .search-container .search {
         width: 140px;
     }
 
-    header[data-menu="search-container"] .user-data .user-information {
+    .active-search .user-data .user-information {
         width: 0;
         font-size: 0;
         opacity: 0;
         visibility: hidden;
     }
 
-    header[data-menu="search-container"] .user-data .user-avatar {
+    .active-search .user-data .user-avatar {
         margin: 0 auto;
     }
 

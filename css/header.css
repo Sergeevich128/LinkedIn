@@ -37,6 +37,7 @@ header {
 .icon-search {
     height: 24px;
     width: 24px;
+    margin-right: 10px;
     background: url(../images/svg/search.svg) no-repeat;
 }
 
@@ -264,10 +265,6 @@ body[data-menu="btn"] .menu-btn span::after {
     .icon {
         height: 50px;
     }
-
-    .icon-search {
-        margin-right: 6px;
-    }
 }
 
 @media screen and (min-width: 576px) {
@@ -307,10 +304,6 @@ body[data-menu="btn"] .menu-btn span::after {
     .icon-other,
     .icon {
         height: 55px;
-    }
-
-    .icon-search {
-        margin-right: 8px;
     }
 }
 

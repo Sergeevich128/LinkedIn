@@ -241,14 +241,13 @@ button:focus {
 }
 
 .link {
-    display: block;
-    margin-top: 25px;
     font-weight: 500;
     font-size: 12px;
     line-height: 11px;
     text-transform: uppercase;
     text-decoration: none;
     color: #0275B1;
+    cursor: pointer;
 }
 
 .projects {
@@ -270,6 +269,10 @@ button:focus {
 
 .projects-slider {
     display: flex;
+    justify-content: space-between;
+    height: 200px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
     overflow: hidden;
     cursor: pointer;
 }
@@ -277,7 +280,7 @@ button:focus {
 .project {
     display: flex;
     flex-direction: column;
-    margin: 0 10px;
+    margin-bottom: 10px;
     pointer-events: none;
     cursor: pointer;
 }
@@ -449,6 +452,11 @@ button:focus {
     cursor: grabbing;
 }
 
+.input-more {
+    opacity: 0;
+    visibility: hidden;
+}
+
 @media screen and (max-width: 767px) {
     .profile {
         height: 300px;
@@ -534,8 +542,12 @@ button:focus {
         padding: 22px;
     }
 
+    .projects {
+        padding-right: 45px;
+    }
+
     .show-all {
-        margin-top: 25px;
+        margin-top: 20px;
     }
 }
 

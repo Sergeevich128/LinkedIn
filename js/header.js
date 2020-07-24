@@ -9,9 +9,7 @@ document.addEventListener('click', (event) => {
     if (parent) {
         menuName = parent.dataset.menu;
     }
-    if (window.matchMedia("(max-width: 767px)").matches) {
-        if (parent === searchContainer) return;
-    }
+    if (window.matchMedia("(max-width: 767px)").matches && parent === searchContainer) return;
 
     body.setAttribute(
         'data-menu',

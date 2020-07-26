@@ -1,4 +1,7 @@
 const projectsSlider = document.getElementsByClassName('projects-slider')[0];
+const projectsLink = document.getElementsByClassName('projects-link')[0];
+const numProject = document.getElementsByClassName('project-num')[0];
+const about = document.getElementsByClassName('about-text')[0];
 
 const items = [
     {
@@ -55,7 +58,7 @@ const items = [
         title: 'Drozd. Brand identity. 2016',
         about: 'Graphic design, 03.04.2016'
     }
-]
+];
 
 const containers = items.map((item) => {
     const projectContainer = document.createElement('div');
@@ -71,4 +74,24 @@ const containers = items.map((item) => {
     return projectContainer;
 });
 
+projectsSlider.nextElementSibling.firstChild.innerText += ` (${items.length})`;
+numProject.innerText += ` ${items.length}`;
+
 projectsSlider.append(...containers);
+
+
+const text = [
+    `I'm more experienced in eCommerce web projects and mobile banking apps, but also like to work with
+	creative projects, such as landing pages or unusual corporate websites. I'm more experienced in 
+	eCommerce web projects and mobile banking apps, but also like to work with creative projects, such 
+	as landing pages or unusual corporate websites. I'm more experienced in eCommerce web projects and 
+	mobile banking apps, but also like to work with creative projects, such as landing pages or unusual
+	corporate websites. I'm more experienced in eCommerce web projects and mobile banking apps, but also
+	like to work with creative projects, such as landing pages or unusual corporate websites.I'm more 
+	experienced in eCommerce web projects and mobile banking apps, but also like to work with creative
+	projects, such as landing pages or unusual corporate websites.I'm more experienced in eCommerce web
+    projects and mobile banking apps, but also like to work with creative projects, such as landing 
+	pages or unusual corporate websites.`
+]
+
+about.append(...text)

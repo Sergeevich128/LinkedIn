@@ -1,4 +1,4 @@
-const main = document.getElementsByTagName('main')[0];
+const content = document.getElementsByClassName('content')[0];
 const buttons = document.getElementsByClassName('buttons')[0];
 const buttonsInfo = document.getElementsByClassName('buttons-info')[0];
 const buttonsFastAccess = document.getElementsByClassName('fast-access')[0];
@@ -19,15 +19,13 @@ buttonsInfo.addEventListener('click', (event) => {
     }
 });
 
-main.addEventListener('click', (event) => {
-    let elem = event.target.closest('.link')
+content.addEventListener('click', (event) => {
+    let elem = event.target.closest('.link');
     if (elem) {
         elem.parentNode.classList.toggle('active')
-        if (elem.parentNode.classList.contains('active')) {
-        	elem.previousElementSibling.style.maxHeight = `${elem.previousElementSibling.scrollHeight}px` 
-        } else {
-        	elem.previousElementSibling.style.maxHeight = ``;
-        }
+        elem.parentNode.classList.contains('active') ?
+            elem.previousElementSibling.style.maxHeight = `${elem.previousElementSibling.scrollHeight}px` :
+            elem.previousElementSibling.style.maxHeight = ``;
     }
 });
 

@@ -92,6 +92,12 @@ aside section {
     height: 52px;
 }
 
+.courses {
+    max-height: 195px;
+    transition: .7s;
+    overflow: hidden;
+}
+
 .course-title {
     text-transform: uppercase;
 }
@@ -116,33 +122,13 @@ aside section {
     line-height: 150%;
 }
 
-.course1,
-.course2,
-.course3 {
+.course-img {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 80px;
     height: 52px;
     cursor: pointer;
-}
-
-.course1 {
-    background: url("../images/png/course1.png") no-repeat;
-}
-
-.course2 {
-    background: url("../images/png/course2.png") no-repeat;
-}
-
-.course3 {
-    background: url("../images/png/course3.png") no-repeat;
-}
-
-.courses .dashboard-link {
-    display: block;
-    margin: 29px 0 0 0;
-    text-decoration: none;
 }
 
 @media screen and (max-width: 991px) {

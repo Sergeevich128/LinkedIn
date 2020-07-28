@@ -210,7 +210,7 @@ const htmlSkillsContainer = skills.map((el) => {
             plus.innerText = `+${numImg2}`
             imgContainer.append(plus);
         }
-    })
+    });
 
     const num = document.createElement('span');
     num.classList.add('skill-number');

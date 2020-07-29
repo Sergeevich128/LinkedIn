@@ -1,4 +1,5 @@
 const skillsContainer = document.getElementsByClassName('skills')[0];
+const skillsAmount = document.getElementsByClassName('skills-amount')[0];
 
 const skills = [
 	{
@@ -181,22 +182,22 @@ const skills = [
     }
 ];
 
-const htmlSkillsContainer = skills.map((el) => {
-    const skill = document.createElement('div');
-    skill.classList.add('skill');
+const htmlSkillsContainer = skills.map((skill) => {
+    const skillContainer = document.createElement('div');
+    skillContainer.classList.add('skill');
 
     const skillName = document.createElement('div');
     skillName.classList.add('skill-name');
 
     const title = document.createElement('h4');
-    title.innerText = el.title;
+    title.innerText = skill.title;
 
     const imgContainer = document.createElement('div');
     imgContainer.classList.add('imgs-skills');
 
     let numImg = 0;
     let numImg2 = 0;
-    el.images.forEach(item => {
+    skill.images.forEach(item => {
         if (numImg < 5) {
             numImg++;
             const img = document.createElement('img');
@@ -217,9 +218,9 @@ const htmlSkillsContainer = skills.map((el) => {
     num.innerText = numImg + numImg2;
 
     skillName.append(title, num);
-    skill.append(skillName, imgContainer);
-    return skill;
+    skillContainer.append(skillName, imgContainer);
+    return skillContainer;
 });
 
-skillsContainer.nextElementSibling.firstChild.innerText += ` (${skills.length})`;
+skillsAmount.innerText += ` (${skills.length})`;
 skillsContainer.append(...htmlSkillsContainer);

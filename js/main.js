@@ -20,12 +20,13 @@ buttonsInfo.addEventListener('click', (event) => {
 });
 
 content.addEventListener('click', (event) => {
-    let elem = event.target.closest('.link');
+    let elem = event.target.closest('.btn-more');
     if (elem) {
         elem.parentNode.classList.toggle('active')
-        elem.parentNode.classList.contains('active') ?
-            elem.previousElementSibling.style.maxHeight = `${elem.previousElementSibling.scrollHeight}px` :
-            elem.previousElementSibling.style.maxHeight = ``;
+
+        elem.previousElementSibling.style.maxHeight = elem.parentNode.classList.contains('active') ?
+            `${elem.previousElementSibling.scrollHeight}px` :
+            '';
     }
 });
 

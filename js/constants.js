@@ -2,6 +2,7 @@ const projectsSlider = document.getElementsByClassName('projects-slider')[0];
 const projectsLink = document.getElementsByClassName('projects-link')[0];
 const numProject = document.getElementsByClassName('project-num')[0];
 const about = document.getElementsByClassName('about-text')[0];
+const projectsAmount = document.getElementsByClassName('projects-amount')[0];
 
 const items = [
     {
@@ -74,7 +75,7 @@ const containers = items.map((item) => {
     return projectContainer;
 });
 
-projectsSlider.nextElementSibling.firstChild.innerText += ` (${items.length})`;
+projectsAmount.innerText += ` (${items.length})`;
 numProject.innerText += ` ${items.length}`;
 
 projectsSlider.append(...containers);
@@ -94,4 +95,4 @@ const text = [
 	pages or unusual corporate websites.`
 ]
 
-about.append(...text)
+about.append(text)

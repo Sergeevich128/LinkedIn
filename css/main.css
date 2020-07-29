@@ -43,7 +43,6 @@ aside h4 {
     justify-content: flex-end;
 }
 
-
 .upload {
     display: flex;
     align-items: center;
@@ -99,6 +98,7 @@ aside h4 {
     box-shadow: 0 10px 30px rgba(113, 123, 133, 0.05);
     border-radius: 4px;
     margin-left: 10px;
+    cursor: pointer;
 }
 
 .user-info {
@@ -113,7 +113,6 @@ aside h4 {
     flex-direction: column;
     width: 24px;
     height: 19px;
-    cursor: pointer;
     margin: auto;
 }
 
@@ -124,13 +123,13 @@ aside h4 {
     background: #181818;
 }
 
-.location {
+.name-location {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.avatar {
+.avatar-big {
     margin-right: 25px;
 }
 
@@ -236,15 +235,14 @@ button:focus {
 
 .about-text {
     display: block;
-    margin: 15px 0 20px 0;
+    margin: 15px 0 5px 0;
     line-height: 150%;
     overflow: hidden;
     max-height: 61px;
     transition: .7s;
 }
 
-.link {
-    display: flex;
+.btn-more {
     margin-top: 20px;
     font-weight: 500;
     font-size: 12px;
@@ -464,16 +462,10 @@ button:focus {
 
 .container-more button span:last-child {
     display: none;
-    margin-left: 4px;
 }
 
 .container-more.active button span:first-child {
     display: none;
-}
-
-.container-more button span:first-child {
-    order: 1;
-    margin-left: 4px;
 }
 
 .container-more.active button span:last-child {
@@ -491,10 +483,6 @@ button:focus {
     main .buttons-info .active {
         width: 150px;
         height: 26px;
-    }
-
-    .text {
-        font-size: 11px;
     }
 
     .avatar-big {
@@ -536,6 +524,7 @@ button:focus {
         height: 28px;
     }
 }
+
 @media screen and (max-width: 1199px) and (min-width: 992px) {
     .skill {
         width: calc(250 / 790 * 122%);
